@@ -1,0 +1,21 @@
+{
+  "name": "AI Summarizer",
+  "version": "1.0.0",
+  "description": "AI Summarizer is a user-friendly web application that converts long paragraphs into short, easy-to-understand summaries. Built with React (JSX) for the frontend and Node.js (Express) for the backend, it leverages AI to deliver quick and accurate text summarization.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "server:dev": "cd backend && nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10"
+  }
+}
